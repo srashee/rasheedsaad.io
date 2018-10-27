@@ -1,0 +1,55 @@
+/* Yep, it looks like a name tag.  Give your pattern matcher a cookie. */
+
+body {
+  background-color: #eeeeee;
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: #000000;
+
+  align: center;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post {
+  padding: 10px 5px 5px 10px;
+  background: #ffffff;
+}
+
+.post h2 {
+  font-size: 1em;
+}
+
+.header {
+    padding: 5px 5px 5px 5px;
+    background: #72ff98;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.date {
+  text-align: right;
+  background: #dddddd;
+  padding: 2px 2px 2px 2px;
+  font-size: 90%;
+}
+
+.related {
+  text-align: left;
+  background: #bbaaee;
+  padding: 10px;
+  font-size: 90%;
+}
+
+.footer {
+  padding: 5px 5px 5px 5px;
+  background: #72ff98;
+  text-align: center;
+}
+
+img {
+  padding: 1px;
+  border: 1px solid #021a40;
+}
