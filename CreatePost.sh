@@ -36,37 +36,37 @@ DOW="$(date +'%A')"
 
 echo "${title}"
 echo "${para1}"
-echo "<!DOCTYPE html>" >> posts/template.html
-echo "<html lang=\"en\">" >> posts/template.html
-echo "<head>" >> posts/template.html
-echo "<title>saadrasheed : blog</title>" >> posts/template.html
-echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"../css/main.css\">" >> posts/template.html
-echo "<meta http-equiv=\"Content-type\" content=\"text/html;charset=UTF-8\">" >> posts/template.html
-echo "</head>" >> posts/template.html
-echo "<body>" >> posts/template.html
-echo "<div class=\"header\">" >> posts/template.html
-echo "<h1>Learn</h1>" >> posts/template.html
-echo "Millenium tech journey" >> posts/template.html
-echo "</div>" >> posts/template.html
-echo "<!-- Body starts here -->" >> posts/template.html
-echo " " >> posts/template.html
-echo "<div class=\"date\">${DOW}, ${MONTH} ${DAY}, ${YEAR}</div>" >> posts/template.html
-echo "<div class=\"post\">" >> posts/template.html
-echo "<h2> ${title} </h2>" >> posts/template.html
-echo "${para1}" >> posts/template.html
-echo " " >> posts/template.html
-echo "</div>" >> posts/template.html
-echo "<!-- List item -->" >> posts/template.html
-echo " " >> posts/template.html
-echo " " >> posts/template.html
-echo "<!--Footer starts here -->" >> posts/template.html
-echo "<div class=\"footer\">" >> posts/template.html
-echo "<a href=\"/\">saadrasheed</a>" >> posts/template.html
-echo "|" >> posts/template.html
-echo "<a href=\"rasheedsaad.com\">Contact</a>" >> posts/template.html
-echo "</div>" >> posts/template.html
-echo "</body>" >> posts/template.html
-echo "</html>" >> posts/template.html
+echo "<!DOCTYPE html>" >> posts/${FILEF}.html
+echo "<html lang=\"en\">" >> posts/${FILEF}.html
+echo "<head>" >> posts/${FILEF}.html
+echo "<title>saadrasheed : blog</title>" >> posts/${FILEF}.html
+echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"../css/main.css\">" >> posts/${FILEF}.html
+echo "<meta http-equiv=\"Content-type\" content=\"text/html;charset=UTF-8\">" >> posts/${FILEF}.html
+echo "</head>" >> posts/${FILEF}.html
+echo "<body>" >> posts/${FILEF}.html
+echo "<div class=\"header\">" >> posts/${FILEF}.html
+echo "<h1>Learn</h1>" >> posts/${FILEF}.html
+echo "Millenium tech journey" >> posts/${FILEF}.html
+echo "</div>" >> posts/${FILEF}.html
+echo "<!-- Body starts here -->" >> posts/${FILEF}.html
+echo " " >> posts/${FILEF}.html
+echo "<div class=\"date\">${DOW}, ${MONTH} ${DAY}, ${YEAR}</div>" >> posts/${FILEF}.html
+echo "<div class=\"post\">" >> posts/${FILEF}.html
+echo "<h2> ${title} </h2>" >> posts/${FILEF}.html
+echo "${para1}" >> posts/${FILEF}.html
+echo " " >> posts/${FILEF}.html
+echo "</div>" >> posts/${FILEF}.html
+echo "<!-- List item -->" >> posts/${FILEF}.html
+echo " " >> posts/${FILEF}.html
+echo " " >> posts/${FILEF}.html
+echo "<!--Footer starts here -->" >> posts/${FILEF}.html
+echo "<div class=\"footer\">" >> posts/${FILEF}.html
+echo "<a href=\"/\">saadrasheed</a>" >> posts/${FILEF}.html
+echo "|" >> posts/${FILEF}.html
+echo "<a href=\"rasheedsaad.com\">Contact</a>" >> posts/${FILEF}.html
+echo "</div>" >> posts/${FILEF}.html
+echo "</body>" >> posts/${FILEF}.html
+echo "</html>" >> posts/${FILEF}.html
 
 # Delete Footer
 sed -i index.html -e :a -e '$d;N;2,8ba' -e 'P;D'
