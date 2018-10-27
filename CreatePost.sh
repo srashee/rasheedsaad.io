@@ -68,13 +68,23 @@ echo "${para1}"
 #echo "</body>" >> posts/template.html
 #echo "</html>" >> posts/template.html
 
-head -8 -2 index.html
+# Delete Footer
+sed -i index.html -e :a -e '$d;N;2,8ba' -e 'P;D'
 
+# Add post
+echo "<div class=\"date\">${DOW}, ${MONTH} ${DAY}, ${YEAR}</div>" >> index.html
+echo "<div class=\"post\">" >> index.html
+echo "<ul>" >> index.html
+echo "<li><a href=\"posts/${FILEF}.html\">${title}</a>" >> index.html
+echo "</ul>" >> index.html
+echo "</div>" >> index.html
+
+# Put footer back
 echo "<!--Footer starts here -->" >> index.html
-echo "<div class="footer">" >> index.html
-echo "<a href="/">saadrasheed</a>" >> index.html
+echo "<div class=\"footer\">" >> index.html
+echo "<a href=\"/\">saadrasheed</a>" >> index.html
 echo "|" >> index.html
-echo "<a href="rasheedsaad.com">Contact</a>" >> index.html
+echo "<a href=\"rasheedsaad.com\">Contact</a>" >> index.html
 echo "</div>" >> index.html
 echo "</body>" >> index.html
 echo "</html>" >> index.html
