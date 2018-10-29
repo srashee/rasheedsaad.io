@@ -68,24 +68,46 @@ echo "</div>" >> posts/${FILEF}.html
 echo "</body>" >> posts/${FILEF}.html
 echo "</html>" >> posts/${FILEF}.html
 
-# Delete Footer
-sed -i index.html -e :a -e '$d;N;2,8ba' -e 'P;D'
+
+# Add header to temp file
+echo "<!DOCTYPE html>" >> temp.html
+echo "<html lang=\"en\">" >> temp.html
+echo "<head>" >> temp.html
+echo "<title>saadrasheed : blog</title>" >> temp.html
+echo "<link rel="stylesheet" type=\"text/css\" href=\"css/main.css\">" >> temp.html
+echo "<meta http-equiv=\"Content-type\" content=\"text/html;charset=UTF-8\">" >> temp.html
+echo "</head>" >> temp.html
+echo "<body>" >> temp.html
+echo "<div class=\"header\">" >> temp.html
+echo "<h1>Learn</h1>" >> temp.html
+echo "Blogging with code" >> temp.html
+echo "</div>" >> temp.html
+echo "<!-- Body starts here -->" >> temp.html
 
 # Add post
-echo "<div class=\"date\">${DOW}, ${MONTH} ${DAY}, ${YEAR}</div>" >> index.html
-echo "<div class=\"post\">" >> index.html
-echo "<ul>" >> index.html
-echo "<li><a href=\"posts/${FILEF}.html\">${title}</a>" >> index.html
-echo "</ul>" >> index.html
-echo "</div>" >> index.html
+echo "<div class=\"date\">${DOW}, ${MONTH} ${DAY}, ${YEAR}</div>" >> temp.html
+echo "<div class=\"post\">" >> temp.html
+echo "<ul>" >> temp.html
+echo "<li><a href=\"posts/${FILEF}.html\">${title}</a>" >> temp.html
+echo "</ul>" >> temp.html
+echo "</div>" >> temp.html
+
+
+# Make backup of index
+# Delete the header
+sed -i '1,13d' index.html
+
+cat index.html >> temp.html
+cp -f temp.html index.html
+rm temp.html
 
 # Put footer back
-echo "<!--Footer starts here -->" >> index.html
-echo "<div class=\"footer\">" >> index.html
-echo "<a href=\"/\">saadrasheed</a>" >> index.html
-echo "|" >> index.html
-echo "<a href=\"rasheedsaad.com\">Contact</a>" >> index.html
-echo "</div>" >> index.html
-echo "</body>" >> index.html
-echo "</html>" >> index.html
+#echo "<!--Footer starts here -->" >> index.html
+#echo "<div class=\"footer\">" >> index.html
+#echo "<a href=\"/\">saadrasheed</a>" >> index.html
+#echo "|" >> index.html
+#echo "<a href=\"rasheedsaad.com\">Contact</a>" >> index.html
+#echo "</div>" >> index.html
+#echo "</body>" >> index.html
+#echo "</html>" >> index.html
 
