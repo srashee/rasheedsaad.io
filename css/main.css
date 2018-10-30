@@ -22,7 +22,7 @@ body {
 
 .header {
     padding: 5px 5px 5px 5px;
-    background: #72ff98;
+    background: #9b9b9b;
 }
 
 .header a {
@@ -45,7 +45,7 @@ body {
 
 .footer {
   padding: 5px 5px 5px 5px;
-  background: #72ff98;
+  background: #9b9b9b;
   text-align: center;
 }
 
