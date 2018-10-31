@@ -45,9 +45,9 @@ echo "<meta http-equiv=\"Content-type\" content=\"text/html;charset=UTF-8\">" >>
 echo "</head>" >> posts/${FILEF}.html
 echo "<body>" >> posts/${FILEF}.html
 echo "<div class=\"header\">" >> posts/${FILEF}.html
-echo "<h1>Wanderer</h1>" >> posts/${FILEF}.html
+echo "<center><h1>Wanderer</h1>" >> posts/${FILEF}.html
 echo "Millenium tech journey" >> posts/${FILEF}.html
-echo "</div>" >> posts/${FILEF}.html
+echo "</center></div>" >> posts/${FILEF}.html
 echo "<!-- Body starts here -->" >> posts/${FILEF}.html
 echo " " >> posts/${FILEF}.html
 echo "<div class=\"date\">${DOW}, ${MONTH} ${DAY}, ${YEAR}</div>" >> posts/${FILEF}.html
@@ -79,9 +79,9 @@ echo "<meta http-equiv=\"Content-type\" content=\"text/html;charset=UTF-8\">" >>
 echo "</head>" >> temp.html
 echo "<body>" >> temp.html
 echo "<div class=\"header\">" >> temp.html
-echo "<h1>Learn</h1>" >> temp.html
+echo "<center><h1>Wanderer</h1>" >> temp.html
 echo "<a href=\"https://github.com/srashee\"><img border=\"0\" alt=\"github\" src=\"img/ghub.png\" width=\"64\" height=\"64\"></a> " >> temp.html
-echo "</div>" >> temp.html
+echo "</center></div>" >> temp.html
 echo "<!-- Body starts here -->" >> temp.html
 
 # Add post
