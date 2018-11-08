@@ -95,19 +95,19 @@ echo "</div>" >> temp.html
 
 # Make backup of index
 # Delete the header
-sed -i '1,13d' index.html
+sed -i '1,13d' blog.html
 
-cat index.html >> temp.html
-cp -f temp.html index.html
+cat blog.html >> temp.html
+cp -f temp.html blog.html
 rm temp.html
 
 # Put footer back
-#echo "<!--Footer starts here -->" >> index.html
-#echo "<div class=\"footer\">" >> index.html
-#echo "<a href=\"/\">saadrasheed</a>" >> index.html
-#echo "|" >> index.html
-#echo "<a href=\"rasheedsaad.com\">Contact</a>" >> index.html
-#echo "</div>" >> index.html
-#echo "</body>" >> index.html
-#echo "</html>" >> index.html
+#echo "<!--Footer starts here -->" >> blog.html
+#echo "<div class=\"footer\">" >> blog.html
+#echo "<a href=\"/\">saadrasheed</a>" >> blog.html
+#echo "|" >> blog.html
+#echo "<a href=\"rasheedsaad.com\">Contact</a>" >> blog.html
+#echo "</div>" >> blog.html
+#echo "</body>" >> blog.html
+#echo "</html>" >> blog.html
 
