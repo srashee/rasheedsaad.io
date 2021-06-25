@@ -242,7 +242,7 @@ ul#nav li.current a { color: #F06000; }
    overflow: hidden;
 }
 
-#resume a, #resume a:visited  { color: #11ABB0; }
+#resume a, #resume a:visited  { color: #3d8d66; }
 #resume a:hover, #resume a:focus { color: #313131; }
 
 #resume h1 {
@@ -251,8 +251,7 @@ ul#nav li.current a { color: #F06000; }
    letter-spacing: 1px;
 }
 #resume h1 span {
-   border-bottom: 3px solid #11ABB0;
-   padding-bottom: 6px;
+   border-bottom: 3px solid #3d8d66;   padding-bottom: 6px;
 }
 #resume h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
@@ -856,8 +855,7 @@ call-to-action .button {
 #contact textarea:focus,
 #contact select:focus {
 	color: #fff;
-	background-color: #11ABB0;
-}
+	background-color: #3d8d66;}
 #contact button.submit {
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -875,8 +873,7 @@ call-to-action .button {
 	background: #fff;
 }
 #contact span.required {
-	color: #11ABB0;
-	font-size: 13px;
+	color: #3d8d66;	font-size: 13px;
 }
 #message-warning, #message-success {
    display: none;

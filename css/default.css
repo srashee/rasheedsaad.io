@@ -266,8 +266,7 @@ hr { border: solid #E3E3E3; border-width: 1px 0 0; clear: both; margin: 11px 0 3
 a, a:visited {
    text-decoration: none;
    outline: 0;
-   color: #11ABB0;
-
+   color: #3d8d66;
    -webkit-transition: color .3s ease-in-out;
    -moz-transition: color .3s ease-in-out;
    -o-transition: color .3s ease-in-out;
@@ -327,8 +326,7 @@ li p { }
    color: #313131;
 }
 .stats-tabs li a:hover {
-   color:#11ABB0;
-}
+   color:#3d8d66;}
 .stats-tabs li a b {
 	display: block;
 	margin: 6px 0 0 0;
@@ -414,8 +412,7 @@ dd { margin: 0 0 0 20px; }
 }
 .pagination .current,
 .pagination .current:hover {
-   background-color: #11ABB0;
-   color: #fff;
+   background-color: #3d8d66;   color: #fff;
 }
 .pagination .inactive,
 .pagination .inactive:hover {
@@ -442,8 +439,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
    font: 16px/30px 'opensans-bold', sans-serif;
-   background: #11ABB0;
-   display: inline-block;
+   background: #3d8d66;   display: inline-block;
 	text-decoration: none;
    letter-spacing: 0;
    color: #fff;
